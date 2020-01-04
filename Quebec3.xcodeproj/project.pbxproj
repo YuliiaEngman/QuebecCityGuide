@@ -14,7 +14,9 @@
 		0F28EC8323C12C20007B9A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F28EC8223C12C20007B9A25 /* Assets.xcassets */; };
 		0F28EC8623C12C20007B9A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28EC8423C12C20007B9A25 /* LaunchScreen.storyboard */; };
 		0F28EC9123C12C20007B9A25 /* Quebec3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9023C12C20007B9A25 /* Quebec3Tests.swift */; };
-		0F28EC9C23C12DD5007B9A25 /* SightseeingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9B23C12DD5007B9A25 /* SightseeingViewController.swift */; };
+		0F28EC9C23C12DD5007B9A25 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */; };
+		0F28EC9E23C132D2007B9A25 /* LuxeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */; };
+		0F28ECA023C13346007B9A25 /* CafesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9F23C13346007B9A25 /* CafesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,9 @@
 		0F28EC8C23C12C20007B9A25 /* Quebec3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quebec3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F28EC9023C12C20007B9A25 /* Quebec3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quebec3Tests.swift; sourceTree = "<group>"; };
 		0F28EC9223C12C20007B9A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F28EC9B23C12DD5007B9A25 /* SightseeingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightseeingViewController.swift; sourceTree = "<group>"; };
+		0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxeryViewController.swift; sourceTree = "<group>"; };
+		0F28EC9F23C13346007B9A25 /* CafesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,9 @@
 				0F28EC7B23C12C1D007B9A25 /* SceneDelegate.swift */,
 				0F28EC7D23C12C1D007B9A25 /* FirstViewController.swift */,
 				0F28EC7F23C12C1D007B9A25 /* Main.storyboard */,
-				0F28EC9B23C12DD5007B9A25 /* SightseeingViewController.swift */,
+				0F28EC9F23C13346007B9A25 /* CafesViewController.swift */,
+				0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */,
+				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
 				0F28EC8223C12C20007B9A25 /* Assets.xcassets */,
 				0F28EC8423C12C20007B9A25 /* LaunchScreen.storyboard */,
 				0F28EC8723C12C20007B9A25 /* Info.plist */,
@@ -203,10 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F28EC9E23C132D2007B9A25 /* LuxeryViewController.swift in Sources */,
 				0F28EC7E23C12C1D007B9A25 /* FirstViewController.swift in Sources */,
 				0F28EC7A23C12C1D007B9A25 /* AppDelegate.swift in Sources */,
 				0F28EC7C23C12C1D007B9A25 /* SceneDelegate.swift in Sources */,
-				0F28EC9C23C12DD5007B9A25 /* SightseeingViewController.swift in Sources */,
+				0F28EC9C23C12DD5007B9A25 /* BudgetViewController.swift in Sources */,
+				0F28ECA023C13346007B9A25 /* CafesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
-        <!--Sightseeing View Controller-->
+        <!--Budget View Controller-->
         <scene sceneID="CVO-bm-j9x">
             <objects>
-                <viewController id="Omr-KY-65b" customClass="SightseeingViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Omr-KY-65b" customClass="BudgetViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wc2-JQ-CkF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,11 +61,43 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="113.83928571428571"/>
         </scene>
-        <!--Item-->
+        <!--Luxery View Controller-->
+        <scene sceneID="Uz4-zq-kIr">
+            <objects>
+                <viewController id="Fca-t2-vBC" customClass="LuxeryViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yx9-qQ-7vX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="SZO-TG-Q9n"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8JZ-oj-GxL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="097-ln-J2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3287" y="838"/>
+        </scene>
+        <!--Cafes View Controller-->
+        <scene sceneID="12J-p2-nQR">
+            <objects>
+                <viewController id="aLM-qh-vQA" customClass="CafesViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4aj-jg-wgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gqj-yK-9Si"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ikY-Ct-gSe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEs-Qg-8yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3287" y="1574"/>
+        </scene>
+        <!--Budget Sightseeings-->
         <scene sceneID="njz-rA-CgC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZdK-0X-2sx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gN0-NK-Wem"/>
+                    <tabBarItem key="tabBarItem" title="Budget Sightseeings" id="gN0-NK-Wem"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jfb-hb-Vlg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9V4-q6-a7o">
@@ -93,11 +125,51 @@
                     </tabBar>
                     <connections>
                         <segue destination="ZdK-0X-2sx" kind="relationship" relationship="viewControllers" id="tMp-2F-zyL"/>
+                        <segue destination="OUY-Oy-51Q" kind="relationship" relationship="viewControllers" id="eim-dX-Sb6"/>
+                        <segue destination="nxr-FS-yTc" kind="relationship" relationship="viewControllers" id="hFG-IT-otL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOw-pi-CYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="113.83928571428571"/>
+        </scene>
+        <!--Luxery Sightseeings-->
+        <scene sceneID="tji-EA-3hc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUY-Oy-51Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Luxery Sightseeings" id="4ac-mN-37N"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpC-QH-Esi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fca-t2-vBC" kind="relationship" relationship="rootViewController" id="DQt-6m-Fcm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5i-W4-pzC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="838"/>
+        </scene>
+        <!--Cafes & Restaurants-->
+        <scene sceneID="gjd-RP-ePI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxr-FS-yTc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cafes &amp; Restaurants" id="3nz-SW-Yph"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aLM-qh-vQA" kind="relationship" relationship="rootViewController" id="Pcq-XO-le6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w32-2d-uNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="1574"/>
         </scene>
     </scenes>
     <resources>

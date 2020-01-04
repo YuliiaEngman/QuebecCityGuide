@@ -1,5 +1,5 @@
 //
-//  SightseeingViewController.swift
+//  LuxeryViewController.swift
 //  Quebec3
 //
 //  Created by Yuliia Engman on 1/4/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SightseeingViewController: UIViewController {
+class LuxeryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
