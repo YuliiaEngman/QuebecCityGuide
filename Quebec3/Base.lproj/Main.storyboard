@@ -15,12 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
                                 <rect key="frame" x="0.0" y="790" width="414" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="cON-NH-7Ct"/>
+                                </constraints>
                                 <state key="normal" title="Start Your Journey"/>
                                 <connections>
                                     <segue destination="M5R-Qt-Euj" kind="show" id="fdK-dT-jir"/>
@@ -30,7 +32,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dac-J7-lgF"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S0U-fn-Qa9"/>
                             <constraint firstAttribute="bottom" secondItem="Hlh-GF-WnO" secondAttribute="bottom" constant="33.5" id="dpe-c1-G0P"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jri-0Z-wRJ"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nOJ-EW-Nza"/>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="43.5" id="pwZ-fq-p6k"/>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xDf-ev-35x"/>
                         </constraints>
@@ -52,7 +57,19 @@
                     <view key="view" contentMode="scaleToFill" id="wc2-JQ-CkF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ui4-Ti-PAi">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="leading" secondItem="8ef-BZ-bHw" secondAttribute="leading" id="Gy9-EF-y1e"/>
+                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="bottom" secondItem="8ef-BZ-bHw" secondAttribute="bottom" id="bHK-zw-vaX"/>
+                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="trailing" secondItem="8ef-BZ-bHw" secondAttribute="trailing" id="dYH-3o-ncd"/>
+                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="top" secondItem="8ef-BZ-bHw" secondAttribute="top" id="pv2-0e-kck"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8ef-BZ-bHw"/>
                     </view>
                     <navigationItem key="navigationItem" id="vjQ-zj-PSf"/>
@@ -173,6 +190,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="map" catalog="system" width="64" height="56"/>
+        <image name="Tree" width="3024" height="4032"/>
     </resources>
 </document>
