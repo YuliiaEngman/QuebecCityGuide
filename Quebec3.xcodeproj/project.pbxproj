@@ -17,6 +17,7 @@
 		0F28EC9C23C12DD5007B9A25 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */; };
 		0F28EC9E23C132D2007B9A25 /* LuxeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */; };
 		0F28ECA023C13346007B9A25 /* CafesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9F23C13346007B9A25 /* CafesViewController.swift */; };
+		0F28ECA223C155A2007B9A25 /* FreeSightseeingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxeryViewController.swift; sourceTree = "<group>"; };
 		0F28EC9F23C13346007B9A25 /* CafesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesViewController.swift; sourceTree = "<group>"; };
+		0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeSightseeingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				0F28EC7B23C12C1D007B9A25 /* SceneDelegate.swift */,
 				0F28EC7D23C12C1D007B9A25 /* FirstViewController.swift */,
 				0F28EC7F23C12C1D007B9A25 /* Main.storyboard */,
+				0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */,
 				0F28EC9F23C13346007B9A25 /* CafesViewController.swift */,
 				0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */,
 				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F28EC9E23C132D2007B9A25 /* LuxeryViewController.swift in Sources */,
+				0F28ECA223C155A2007B9A25 /* FreeSightseeingViewController.swift in Sources */,
 				0F28EC7E23C12C1D007B9A25 /* FirstViewController.swift in Sources */,
 				0F28EC7A23C12C1D007B9A25 /* AppDelegate.swift in Sources */,
 				0F28EC7C23C12C1D007B9A25 /* SceneDelegate.swift in Sources */,
