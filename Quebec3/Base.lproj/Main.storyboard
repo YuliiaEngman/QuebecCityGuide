@@ -129,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="837.72321428571422"/>
         </scene>
-        <!--Cafes View Controller-->
+        <!--Creperies View Controller-->
         <scene sceneID="12J-p2-nQR">
             <objects>
-                <viewController id="aLM-qh-vQA" customClass="CafesViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aLM-qh-vQA" customClass="CreperiesViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aj-jg-wgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +142,32 @@
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="diq-HF-RIK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" id="x0H-iz-kmU">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0H-iz-kmU" id="8Fe-hX-aLb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="7tg-5p-Lgg" kind="show" id="pBc-wl-oCX"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="diq-HF-RIK" secondAttribute="bottom" id="2qP-nu-sde"/>
+                                    <constraint firstItem="diq-HF-RIK" firstAttribute="leading" secondItem="Nos-yM-6um" secondAttribute="leading" id="NCF-ag-Mfz"/>
+                                    <constraint firstItem="diq-HF-RIK" firstAttribute="top" secondItem="Nos-yM-6um" secondAttribute="top" id="qZl-pa-kbp"/>
+                                    <constraint firstAttribute="trailing" secondItem="diq-HF-RIK" secondAttribute="trailing" id="qrQ-XT-G3i"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -159,10 +184,58 @@
                         <viewLayoutGuide key="safeArea" id="gqj-yK-9Si"/>
                     </view>
                     <navigationItem key="navigationItem" id="ikY-Ct-gSe"/>
+                    <connections>
+                        <outlet property="tableView" destination="diq-HF-RIK" id="5zB-Ze-ldo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEs-Qg-8yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="1573.6607142857142"/>
+        </scene>
+        <!--Creperies Detail View Controller-->
+        <scene sceneID="HRl-MB-PhM">
+            <objects>
+                <viewController id="7tg-5p-Lgg" customClass="CreperiesDetailViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjF-LD-ELr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-7k-KRk">
+                                <rect key="frame" x="0.0" y="56" width="414" height="310.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FEz-7k-KRk" secondAttribute="height" multiplier="4:3" id="h9w-p9-Ypd"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HlM-Be-biu">
+                                <rect key="frame" x="0.0" y="374.5" width="414" height="384.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HlM-Be-biu" firstAttribute="trailing" secondItem="92c-Kn-o6P" secondAttribute="trailing" id="5Mh-Kk-9Eg"/>
+                            <constraint firstItem="HlM-Be-biu" firstAttribute="bottom" secondItem="92c-Kn-o6P" secondAttribute="bottom" id="9ZU-0c-gOy"/>
+                            <constraint firstItem="FEz-7k-KRk" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" id="TLa-xv-Fnn"/>
+                            <constraint firstItem="HlM-Be-biu" firstAttribute="top" secondItem="FEz-7k-KRk" secondAttribute="bottom" constant="8" id="Ve7-ua-FZW"/>
+                            <constraint firstItem="HlM-Be-biu" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" id="j8u-7W-xnz"/>
+                            <constraint firstItem="FEz-7k-KRk" firstAttribute="top" secondItem="92c-Kn-o6P" secondAttribute="top" id="nAt-kp-TYS"/>
+                            <constraint firstItem="FEz-7k-KRk" firstAttribute="trailing" secondItem="92c-Kn-o6P" secondAttribute="trailing" id="pa1-uN-HzA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="92c-Kn-o6P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8fX-5f-UdY"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="HlM-Be-biu" id="IBu-Oz-T2H"/>
+                        <outlet property="image" destination="FEz-7k-KRk" id="bqM-Of-PV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzE-eV-Jl7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4207.2463768115949" y="1573.6607142857142"/>
         </scene>
         <!--Free Sightseeing View Controller-->
         <scene sceneID="8xy-iQ-tzj">
@@ -347,11 +420,11 @@
             </objects>
             <point key="canvasLocation" x="2377" y="838"/>
         </scene>
-        <!--CAFES-->
+        <!--CREPERIES-->
         <scene sceneID="gjd-RP-ePI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxr-FS-yTc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CAFES" id="3nz-SW-Yph"/>
+                    <tabBarItem key="tabBarItem" title="CREPERIES" id="3nz-SW-Yph"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>

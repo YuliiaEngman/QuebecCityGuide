@@ -1,14 +1,18 @@
 //
-//  CafesViewController.swift
+//  CreperiesDetailViewController.swift
 //  Quebec3
 //
-//  Created by Yuliia Engman on 1/4/20.
+//  Created by Yuliia Engman on 1/6/20.
 //  Copyright © 2020 Yuliia Engman. All rights reserved.
 //
 
 import UIKit
 
-class CafesViewController: UIViewController {
+class CreperiesDetailViewController: UIViewController {
+    
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
