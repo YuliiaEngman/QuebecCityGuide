@@ -67,17 +67,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ui4-Ti-PAi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="View" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-La-x0I">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8m4-AZ-xeW">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="leading" secondItem="8ef-BZ-bHw" secondAttribute="leading" id="Gy9-EF-y1e"/>
-                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="bottom" secondItem="8ef-BZ-bHw" secondAttribute="bottom" id="bHK-zw-vaX"/>
-                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="trailing" secondItem="8ef-BZ-bHw" secondAttribute="trailing" id="dYH-3o-ncd"/>
-                            <constraint firstItem="Ui4-Ti-PAi" firstAttribute="top" secondItem="8ef-BZ-bHw" secondAttribute="top" id="pv2-0e-kck"/>
+                            <constraint firstItem="bh5-La-x0I" firstAttribute="trailing" secondItem="8ef-BZ-bHw" secondAttribute="trailing" id="QY5-2R-LQH"/>
+                            <constraint firstItem="8m4-AZ-xeW" firstAttribute="bottom" secondItem="8ef-BZ-bHw" secondAttribute="bottom" id="YX7-3p-uD1"/>
+                            <constraint firstItem="bh5-La-x0I" firstAttribute="top" secondItem="8ef-BZ-bHw" secondAttribute="top" id="cj2-3f-FWc"/>
+                            <constraint firstItem="8m4-AZ-xeW" firstAttribute="leading" secondItem="8ef-BZ-bHw" secondAttribute="leading" id="dHd-fp-8KA"/>
+                            <constraint firstItem="8m4-AZ-xeW" firstAttribute="trailing" secondItem="8ef-BZ-bHw" secondAttribute="trailing" id="eQd-5n-e5g"/>
+                            <constraint firstItem="bh5-La-x0I" firstAttribute="bottom" secondItem="8ef-BZ-bHw" secondAttribute="bottom" id="lgl-jL-iDQ"/>
+                            <constraint firstItem="bh5-La-x0I" firstAttribute="leading" secondItem="8ef-BZ-bHw" secondAttribute="leading" id="qAc-oS-EHd"/>
+                            <constraint firstItem="8m4-AZ-xeW" firstAttribute="top" secondItem="8ef-BZ-bHw" secondAttribute="top" id="qoz-Tp-gMI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ef-BZ-bHw"/>
                     </view>
@@ -110,14 +117,33 @@
                     <view key="view" contentMode="scaleToFill" id="4aj-jg-wgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food copy" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-lL-9wL">
+                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nos-yM-6um" firstAttribute="trailing" secondItem="gqj-yK-9Si" secondAttribute="trailing" id="23J-KY-Lla"/>
+                            <constraint firstItem="vxn-lL-9wL" firstAttribute="trailing" secondItem="gqj-yK-9Si" secondAttribute="trailing" id="RcU-GK-77Y"/>
+                            <constraint firstItem="vxn-lL-9wL" firstAttribute="leading" secondItem="gqj-yK-9Si" secondAttribute="leading" id="Vk3-1L-Eri"/>
+                            <constraint firstItem="Nos-yM-6um" firstAttribute="top" secondItem="gqj-yK-9Si" secondAttribute="top" id="W9w-O5-vdQ"/>
+                            <constraint firstItem="vxn-lL-9wL" firstAttribute="top" secondItem="gqj-yK-9Si" secondAttribute="top" id="aid-g2-h1y"/>
+                            <constraint firstItem="Nos-yM-6um" firstAttribute="leading" secondItem="gqj-yK-9Si" secondAttribute="leading" id="k23-V8-8dp"/>
+                            <constraint firstItem="Nos-yM-6um" firstAttribute="bottom" secondItem="gqj-yK-9Si" secondAttribute="bottom" id="nYP-LO-oL2"/>
+                            <constraint firstItem="vxn-lL-9wL" firstAttribute="bottom" secondItem="gqj-yK-9Si" secondAttribute="bottom" id="wj9-k6-UXU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gqj-yK-9Si"/>
                     </view>
                     <navigationItem key="navigationItem" id="ikY-Ct-gSe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEs-Qg-8yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="1574"/>
+            <point key="canvasLocation" x="3286.9565217391305" y="1573.6607142857142"/>
         </scene>
         <!--Free Sightseeing View Controller-->
         <scene sceneID="8xy-iQ-tzj">
@@ -127,8 +153,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament-1" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
+                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-JD-oDK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -278,7 +304,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Parlament" width="4032" height="3024"/>
+        <image name="Food copy" width="3007" height="3221"/>
+        <image name="Parlament-1" width="1646" height="3011"/>
         <image name="Tree" width="3024" height="4032"/>
+        <image name="View" width="3024" height="4032"/>
     </resources>
 </document>
