@@ -101,14 +101,33 @@
                     <view key="view" contentMode="scaleToFill" id="yx9-qQ-7vX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Luxury" translatesAutoresizingMaskIntoConstraints="NO" id="Ru8-nD-V2n">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRB-6f-Z9G">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WRB-6f-Z9G" firstAttribute="top" secondItem="SZO-TG-Q9n" secondAttribute="top" id="5gL-tC-TPw"/>
+                            <constraint firstItem="WRB-6f-Z9G" firstAttribute="trailing" secondItem="SZO-TG-Q9n" secondAttribute="trailing" id="CNW-pb-fEu"/>
+                            <constraint firstItem="Ru8-nD-V2n" firstAttribute="top" secondItem="SZO-TG-Q9n" secondAttribute="top" id="Flk-dg-Spa"/>
+                            <constraint firstItem="WRB-6f-Z9G" firstAttribute="leading" secondItem="SZO-TG-Q9n" secondAttribute="leading" id="LW8-0t-vhe"/>
+                            <constraint firstItem="Ru8-nD-V2n" firstAttribute="leading" secondItem="SZO-TG-Q9n" secondAttribute="leading" id="PXa-st-CSK"/>
+                            <constraint firstItem="Ru8-nD-V2n" firstAttribute="bottom" secondItem="SZO-TG-Q9n" secondAttribute="bottom" id="WgO-Jl-Ydm"/>
+                            <constraint firstItem="Ru8-nD-V2n" firstAttribute="trailing" secondItem="SZO-TG-Q9n" secondAttribute="trailing" id="aTS-p2-1oT"/>
+                            <constraint firstItem="WRB-6f-Z9G" firstAttribute="bottom" secondItem="SZO-TG-Q9n" secondAttribute="bottom" id="m0v-lt-sL4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SZO-TG-Q9n"/>
                     </view>
                     <navigationItem key="navigationItem" id="8JZ-oj-GxL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="097-ln-J2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="838"/>
+            <point key="canvasLocation" x="3286.9565217391305" y="837.72321428571422"/>
         </scene>
         <!--Cafes View Controller-->
         <scene sceneID="12J-p2-nQR">
@@ -203,11 +222,11 @@
             </objects>
             <point key="canvasLocation" x="3302.898550724638" y="-595.3125"/>
         </scene>
-        <!--Budget Sightseeings-->
+        <!--BUDGET-->
         <scene sceneID="njz-rA-CgC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZdK-0X-2sx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Budget Sightseeings" id="gN0-NK-Wem"/>
+                    <tabBarItem key="tabBarItem" title="BUDGET" id="gN0-NK-Wem"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jfb-hb-Vlg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9V4-q6-a7o">
@@ -245,11 +264,11 @@
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="113.83928571428571"/>
         </scene>
-        <!--Luxery Sightseeings-->
+        <!--LUXURY-->
         <scene sceneID="tji-EA-3hc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUY-Oy-51Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Luxery Sightseeings" id="4ac-mN-37N"/>
+                    <tabBarItem key="tabBarItem" title="LUXURY" id="4ac-mN-37N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpC-QH-Esi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -264,11 +283,11 @@
             </objects>
             <point key="canvasLocation" x="2377" y="838"/>
         </scene>
-        <!--Cafes & Restaurants-->
+        <!--CAFES-->
         <scene sceneID="gjd-RP-ePI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxr-FS-yTc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cafes &amp; Restaurants" id="3nz-SW-Yph"/>
+                    <tabBarItem key="tabBarItem" title="CAFES" id="3nz-SW-Yph"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -283,11 +302,11 @@
             </objects>
             <point key="canvasLocation" x="2377" y="1574"/>
         </scene>
-        <!--Free Sightseeings-->
+        <!--FREE-->
         <scene sceneID="IMZ-kO-PIm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uzY-JB-DHe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Free Sightseeings" id="Pcv-gI-HHv"/>
+                    <tabBarItem key="tabBarItem" title="FREE" id="Pcv-gI-HHv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hVA-SM-z9F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -305,6 +324,7 @@
     </scenes>
     <resources>
         <image name="Food copy" width="3007" height="3221"/>
+        <image name="Luxury" width="3024" height="4032"/>
         <image name="Parlament-1" width="1646" height="3011"/>
         <image name="Tree" width="3024" height="4032"/>
         <image name="View" width="3024" height="4032"/>
