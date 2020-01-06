@@ -28,6 +28,14 @@ class FreeSightseeingViewController: UIViewController {
     func loadData() {
         sightSeeings = FreeSightseeing.freeSightseeing
        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? FreeDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("failed to get indexPath and detailVC")
+        }
+        let sightseeing = sightSeeings[indexPath.row]
+        detailVC.freesightseeing = sightseeing
+    }
 
 }
 
