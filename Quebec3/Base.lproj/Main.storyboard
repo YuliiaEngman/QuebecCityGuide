@@ -19,24 +19,33 @@
                                 <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
-                                <rect key="frame" x="0.0" y="790" width="414" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="cON-NH-7Ct"/>
-                                </constraints>
-                                <state key="normal" title="Start Your Journey"/>
+                                <rect key="frame" x="0.0" y="824" width="414" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Start Your Journey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="M5R-Qt-Euj" kind="show" id="fdK-dT-jir"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Year in Quebec City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6id-tm-tKS">
+                                <rect key="frame" x="20" y="64" width="374" height="35"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6id-tm-tKS" secondAttribute="trailing" constant="20" id="53W-qF-osS"/>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dac-J7-lgF"/>
-                            <constraint firstItem="Edq-6q-yLS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S0U-fn-Qa9"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L5L-Bx-xcV"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mu4-Ov-Keo"/>
+                            <constraint firstItem="Edq-6q-yLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QHQ-0T-NAv"/>
                             <constraint firstAttribute="bottom" secondItem="Hlh-GF-WnO" secondAttribute="bottom" constant="33.5" id="dpe-c1-G0P"/>
-                            <constraint firstItem="Edq-6q-yLS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jri-0Z-wRJ"/>
-                            <constraint firstItem="Edq-6q-yLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nOJ-EW-Nza"/>
+                            <constraint firstItem="6id-tm-tKS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hKh-Eo-iaa"/>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="43.5" id="pwZ-fq-p6k"/>
+                            <constraint firstItem="6id-tm-tKS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qPp-7R-zx8"/>
                             <constraint firstItem="Hlh-GF-WnO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xDf-ev-35x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
