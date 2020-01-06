@@ -18,6 +18,8 @@
 		0F28EC9E23C132D2007B9A25 /* LuxeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */; };
 		0F28ECA023C13346007B9A25 /* CafesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9F23C13346007B9A25 /* CafesViewController.swift */; };
 		0F28ECA223C155A2007B9A25 /* FreeSightseeingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */; };
+		0F28ECA423C2C7EF007B9A25 /* FreeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28ECA323C2C7EF007B9A25 /* FreeDetailViewController.swift */; };
+		0F28ECA623C2CA18007B9A25 /* FreeSightseeings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28ECA523C2CA18007B9A25 /* FreeSightseeings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxeryViewController.swift; sourceTree = "<group>"; };
 		0F28EC9F23C13346007B9A25 /* CafesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesViewController.swift; sourceTree = "<group>"; };
 		0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeSightseeingViewController.swift; sourceTree = "<group>"; };
+		0F28ECA323C2C7EF007B9A25 /* FreeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeDetailViewController.swift; sourceTree = "<group>"; };
+		0F28ECA523C2CA18007B9A25 /* FreeSightseeings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeSightseeings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,9 @@
 				0F28EC7B23C12C1D007B9A25 /* SceneDelegate.swift */,
 				0F28EC7D23C12C1D007B9A25 /* FirstViewController.swift */,
 				0F28EC7F23C12C1D007B9A25 /* Main.storyboard */,
+				0F28ECA323C2C7EF007B9A25 /* FreeDetailViewController.swift */,
 				0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */,
+				0F28ECA523C2CA18007B9A25 /* FreeSightseeings.swift */,
 				0F28EC9F23C13346007B9A25 /* CafesViewController.swift */,
 				0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */,
 				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
@@ -217,8 +223,10 @@
 				0F28EC7E23C12C1D007B9A25 /* FirstViewController.swift in Sources */,
 				0F28EC7A23C12C1D007B9A25 /* AppDelegate.swift in Sources */,
 				0F28EC7C23C12C1D007B9A25 /* SceneDelegate.swift in Sources */,
+				0F28ECA423C2C7EF007B9A25 /* FreeDetailViewController.swift in Sources */,
 				0F28EC9C23C12DD5007B9A25 /* BudgetViewController.swift in Sources */,
 				0F28ECA023C13346007B9A25 /* CafesViewController.swift in Sources */,
+				0F28ECA623C2CA18007B9A25 /* FreeSightseeings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

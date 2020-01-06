@@ -200,6 +200,9 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="GWs-CP-7ZQ" kind="show" id="ypD-za-qay"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -217,10 +220,73 @@
                         <viewLayoutGuide key="safeArea" id="Zih-IR-6Te"/>
                     </view>
                     <navigationItem key="navigationItem" id="YIt-7w-bj2"/>
+                    <connections>
+                        <outlet property="tableView" destination="a6q-uJ-gek" id="aMh-It-bb3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MW3-Iy-GrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3302.898550724638" y="-595.3125"/>
+        </scene>
+        <!--Free Detail View Controller-->
+        <scene sceneID="Cvn-T2-2Sk">
+            <objects>
+                <viewController id="GWs-CP-7ZQ" customClass="FreeDetailViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LK4-aI-tVq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBB-yR-RRd">
+                                <rect key="frame" x="0.0" y="56" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="HUp-Ki-GlR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Sightseeing Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lq-TA-PCT">
+                                <rect key="frame" x="20" y="326" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eAh-er-0VU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dmL-qn-fR6">
+                                <rect key="frame" x="20" y="374" width="374" height="385"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="385" id="feW-LW-o4q"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Lq-TA-PCT" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="4Sn-wm-hBU"/>
+                            <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="dmL-qn-fR6" secondAttribute="trailing" constant="20" id="93P-be-9d7"/>
+                            <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="3Lq-TA-PCT" secondAttribute="trailing" constant="20" id="D2n-F8-I3q"/>
+                            <constraint firstItem="vBB-yR-RRd" firstAttribute="trailing" secondItem="96S-Np-yr9" secondAttribute="trailing" id="HZ2-IO-jvX"/>
+                            <constraint firstItem="dmL-qn-fR6" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="JsO-2o-4Xv"/>
+                            <constraint firstItem="3Lq-TA-PCT" firstAttribute="top" secondItem="vBB-yR-RRd" secondAttribute="bottom" constant="20" id="KKe-zb-TAW"/>
+                            <constraint firstItem="vBB-yR-RRd" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" id="gyd-cm-DhJ"/>
+                            <constraint firstItem="dmL-qn-fR6" firstAttribute="bottom" secondItem="96S-Np-yr9" secondAttribute="bottom" id="ng7-lr-GMq"/>
+                            <constraint firstItem="vBB-yR-RRd" firstAttribute="top" secondItem="96S-Np-yr9" secondAttribute="top" id="sRJ-Aq-Ahd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="96S-Np-yr9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQ4-Qd-yQg"/>
+                    <connections>
+                        <outlet property="image" destination="vBB-yR-RRd" id="NWx-Cw-yF6"/>
+                        <outlet property="sightseeingLabel" destination="3Lq-TA-PCT" id="7rO-9G-Td0"/>
+                        <outlet property="sightseeingTextDescription" destination="dmL-qn-fR6" id="3se-cJ-f2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgm-Cs-sdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4252.1739130434789" y="-595.3125"/>
         </scene>
         <!--BUDGET-->
         <scene sceneID="njz-rA-CgC">
