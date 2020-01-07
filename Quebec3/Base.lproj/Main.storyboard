@@ -10,7 +10,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
         <!--Budget View Controller-->
         <scene sceneID="CVO-bm-j9x">
             <objects>
-                <viewController id="Omr-KY-65b" customClass="BudgetViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Omr-KY-65b" customClass="BudgetViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wc2-JQ-CkF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
         <!--Luxery View Controller-->
         <scene sceneID="Uz4-zq-kIr">
             <objects>
-                <viewController id="Fca-t2-vBC" customClass="LuxeryViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fca-t2-vBC" customClass="LuxeryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yx9-qQ-7vX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Creperies View Controller-->
         <scene sceneID="12J-p2-nQR">
             <objects>
-                <viewController id="aLM-qh-vQA" customClass="CreperiesViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aLM-qh-vQA" customClass="CreperiesViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aj-jg-wgZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,12 +147,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" id="x0H-iz-kmU">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" textLabel="tyu-H8-tlO" style="IBUITableViewCellStyleDefault" id="x0H-iz-kmU">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0H-iz-kmU" id="8Fe-hX-aLb">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Cafe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tyu-H8-tlO">
+                                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <segue destination="7tg-5p-Lgg" kind="show" id="pBc-wl-oCX"/>
@@ -195,7 +204,7 @@
         <!--Creperies Detail View Controller-->
         <scene sceneID="HRl-MB-PhM">
             <objects>
-                <viewController id="7tg-5p-Lgg" customClass="CreperiesDetailViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7tg-5p-Lgg" customClass="CreperiesDetailViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yjF-LD-ELr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +249,7 @@
         <!--Free Sightseeing View Controller-->
         <scene sceneID="8xy-iQ-tzj">
             <objects>
-                <viewController id="Rqi-Ht-AYS" customClass="FreeSightseeingViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rqi-Ht-AYS" customClass="FreeSightseeingViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kNf-sp-86M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,7 +313,7 @@
         <!--Free Detail View Controller-->
         <scene sceneID="Cvn-T2-2Sk">
             <objects>
-                <viewController id="GWs-CP-7ZQ" customClass="FreeDetailViewController" customModule="Quebec3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GWs-CP-7ZQ" customClass="FreeDetailViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LK4-aI-tVq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
