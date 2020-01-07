@@ -2,7 +2,7 @@
 
 ## Description:
 
-## Code snippet of the most challenging part of the project
+## Code snippet of the most challenging part of the project:
 
 ```swift
 func challengingFunc() {
@@ -17,4 +17,4 @@ let name = "John Appleseed"
 
 ## GIF:
 
-![Gif](New-Year-in-Quebec-City.gif)
+![Gif](Assets/New-Year-in-Quebec-City.gif)
