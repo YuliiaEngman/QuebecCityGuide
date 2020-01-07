@@ -11,6 +11,10 @@ let name = "John Appleseed"
 }
 ```
 
-## Screenshot of the app
+## Screenshot of the app:
 
-![login screen](Assets/loginscreen1.png)
+![login screen1](Assets/loginscreen1.png)
+
+## GIF:
+
+![Gif](New-Year-in-Quebec-City.gif)
