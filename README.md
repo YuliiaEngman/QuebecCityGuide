@@ -13,4 +13,4 @@ let name = "John Appleseed"
 
 ## Screenshot of the app
 
-![home screen](Assets/homescreen.png)
+![login screen](Assets/loginscreen1.png)
