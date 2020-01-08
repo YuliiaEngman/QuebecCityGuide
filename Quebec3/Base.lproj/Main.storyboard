@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
-                                <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree2" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="819.00000000000091"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
                                 <rect key="frame" x="0.0" y="824" width="414" height="38"/>
@@ -28,8 +28,8 @@
                                     <segue destination="M5R-Qt-Euj" kind="show" id="fdK-dT-jir"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Year in Quebec City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6id-tm-tKS">
-                                <rect key="frame" x="20" y="64" width="374" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Affordable New Year in Quebec City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6id-tm-tKS">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food copy" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-lL-9wL">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -295,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament-1" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-JD-oDK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -358,7 +358,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBB-yR-RRd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="now" translatesAutoresizingMaskIntoConstraints="NO" id="vBB-yR-RRd">
                                 <rect key="frame" x="0.0" y="56" width="414" height="310.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vBB-yR-RRd" secondAttribute="height" multiplier="4:3" id="ECl-zT-D7d"/>
@@ -513,7 +513,8 @@
         <image name="Food copy" width="3007" height="3221"/>
         <image name="Luxury" width="3024" height="4032"/>
         <image name="Parlament-1" width="1646" height="3011"/>
-        <image name="Tree" width="3024" height="4032"/>
+        <image name="Tree2" width="2732" height="4024"/>
         <image name="View" width="3024" height="4032"/>
+        <image name="now" width="16" height="16"/>
     </resources>
 </document>
