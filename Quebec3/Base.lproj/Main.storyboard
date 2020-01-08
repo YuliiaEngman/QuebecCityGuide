@@ -129,7 +129,7 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="837.72321428571422"/>
         </scene>
-        <!--Creperies View Controller-->
+        <!--CREPERIES-->
         <scene sceneID="12J-p2-nQR">
             <objects>
                 <viewController id="aLM-qh-vQA" customClass="CreperiesViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +192,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gqj-yK-9Si"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ikY-Ct-gSe"/>
+                    <navigationItem key="navigationItem" title="CREPERIES" id="ikY-Ct-gSe"/>
                     <connections>
                         <outlet property="tableView" destination="diq-HF-RIK" id="5zB-Ze-ldo"/>
                     </connections>
@@ -209,37 +209,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-7k-KRk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Crapes" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-7k-KRk">
                                 <rect key="frame" x="0.0" y="56" width="414" height="310.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FEz-7k-KRk" secondAttribute="height" multiplier="4:3" id="h9w-p9-Ypd"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HlM-Be-biu">
-                                <rect key="frame" x="0.0" y="374.5" width="414" height="384.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creperie Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6M-yN-14e">
+                                <rect key="frame" x="20" y="386.5" width="374" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7pQ-cJ-b8O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uS3-Fq-Jm7">
+                                <rect key="frame" x="20" y="446.5" width="374" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jcr-AJ-9tO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YELP Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owl-EY-IIh">
+                                <rect key="frame" x="20" y="506.5" width="374" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ZiI-8V-JMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-lb-4hf">
+                                <rect key="frame" x="20" y="566.5" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yUY-tx-Hfs"/>
+                                </constraints>
+                                <state key="normal" title="Open Web Sourse"/>
+                                <connections>
+                                    <action selector="actionWEBbutton:" destination="7tg-5p-Lgg" eventType="touchUpInside" id="7Af-pc-aLb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HlM-Be-biu" firstAttribute="trailing" secondItem="92c-Kn-o6P" secondAttribute="trailing" id="5Mh-Kk-9Eg"/>
-                            <constraint firstItem="HlM-Be-biu" firstAttribute="bottom" secondItem="92c-Kn-o6P" secondAttribute="bottom" id="9ZU-0c-gOy"/>
+                            <constraint firstItem="Owl-EY-IIh" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" constant="20" id="2Nh-Px-13R"/>
+                            <constraint firstItem="92c-Kn-o6P" firstAttribute="trailing" secondItem="S6M-yN-14e" secondAttribute="trailing" constant="20" id="R9f-Eo-B4d"/>
                             <constraint firstItem="FEz-7k-KRk" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" id="TLa-xv-Fnn"/>
-                            <constraint firstItem="HlM-Be-biu" firstAttribute="top" secondItem="FEz-7k-KRk" secondAttribute="bottom" constant="8" id="Ve7-ua-FZW"/>
-                            <constraint firstItem="HlM-Be-biu" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" id="j8u-7W-xnz"/>
+                            <constraint firstItem="Xb8-lb-4hf" firstAttribute="top" secondItem="Owl-EY-IIh" secondAttribute="bottom" constant="40" id="Uu1-zJ-olB"/>
+                            <constraint firstItem="92c-Kn-o6P" firstAttribute="trailing" secondItem="Owl-EY-IIh" secondAttribute="trailing" constant="20" id="XEA-Z1-x4Y"/>
+                            <constraint firstItem="92c-Kn-o6P" firstAttribute="trailing" secondItem="Xb8-lb-4hf" secondAttribute="trailing" constant="20" id="Zxn-dc-319"/>
                             <constraint firstItem="FEz-7k-KRk" firstAttribute="top" secondItem="92c-Kn-o6P" secondAttribute="top" id="nAt-kp-TYS"/>
+                            <constraint firstItem="92c-Kn-o6P" firstAttribute="trailing" secondItem="uS3-Fq-Jm7" secondAttribute="trailing" constant="20" id="oBc-5d-6w5"/>
+                            <constraint firstItem="S6M-yN-14e" firstAttribute="top" secondItem="FEz-7k-KRk" secondAttribute="bottom" constant="20" id="oNF-OY-ryy"/>
                             <constraint firstItem="FEz-7k-KRk" firstAttribute="trailing" secondItem="92c-Kn-o6P" secondAttribute="trailing" id="pa1-uN-HzA"/>
+                            <constraint firstItem="Xb8-lb-4hf" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" constant="20" id="qTU-Dk-hbk"/>
+                            <constraint firstItem="uS3-Fq-Jm7" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" constant="20" id="x0p-GY-g6b"/>
+                            <constraint firstItem="uS3-Fq-Jm7" firstAttribute="top" secondItem="S6M-yN-14e" secondAttribute="bottom" constant="40" id="xP0-AI-V2v"/>
+                            <constraint firstItem="S6M-yN-14e" firstAttribute="leading" secondItem="92c-Kn-o6P" secondAttribute="leading" constant="20" id="xy2-v6-IMI"/>
+                            <constraint firstItem="Owl-EY-IIh" firstAttribute="top" secondItem="uS3-Fq-Jm7" secondAttribute="bottom" constant="40" id="zlo-dw-NgV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92c-Kn-o6P"/>
                     </view>
                     <navigationItem key="navigationItem" id="8fX-5f-UdY"/>
                     <connections>
-                        <outlet property="descriptionTextView" destination="HlM-Be-biu" id="IBu-Oz-T2H"/>
+                        <outlet property="buttonWEBlabel" destination="Xb8-lb-4hf" id="CQp-8a-FbI"/>
+                        <outlet property="creperieName" destination="S6M-yN-14e" id="ngR-mg-lID"/>
                         <outlet property="image" destination="FEz-7k-KRk" id="bqM-Of-PV7"/>
+                        <outlet property="priceRangeLabel" destination="uS3-Fq-Jm7" id="I0m-4i-wvK"/>
+                        <outlet property="yelpRatingLabel" destination="Owl-EY-IIh" id="zP6-w6-Y2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzE-eV-Jl7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -469,6 +509,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Crapes" width="1472" height="924"/>
         <image name="Food copy" width="3007" height="3221"/>
         <image name="Luxury" width="3024" height="4032"/>
         <image name="Parlament-1" width="1646" height="3011"/>

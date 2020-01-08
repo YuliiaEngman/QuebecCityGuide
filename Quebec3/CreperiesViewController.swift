@@ -11,37 +11,53 @@ import UIKit
 class CreperiesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
+    var creperies = [Business]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-      //  loadData()
+        loadCafes()
     }
     
-//    func loadData() {
-//            sightSeeings = FreeSightseeing.freeSightseeing
-//           }
-
+    func loadCafes() {
+        CreperieAPIClient.fetchCreperie{[weak self] result in
+            switch result {
+            case .failure(let appError):
+                DispatchQueue.main.async {
+                    self?.showAlert(title: "App Error", message: "\(appError)")
+                }
+            case .success(let businesses):
+                self?.creperies = businesses
+            }
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailCafeVC = segue.destination as? CreperiesDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
             fatalError("failed to get indexPath and detailCafeVC")
         }
         
-//        let creperie =
-//        let sightseeing = sightSeeings[indexPath.row]
-        //        detailVC.freesightseeing = sightseeing
+        let someCreperie = creperies[indexPath.row]
+        detailCafeVC.oneCreperie = someCreperie
     }
 }
 
 extension CreperiesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        creperies.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath)
         
-       // let sightSeeing = sightSeeings[indexPath.row]
-      //  cell.textLabel?.text = sightSeeing.title
+       let creperie = creperies[indexPath.row]
+       cell.textLabel?.text = creperie.name
         
         return cell
     }
@@ -52,48 +68,3 @@ extension CreperiesViewController: UITableViewDelegate {
         return 140
     }
 }
-
-//@IBOutlet weak var tableView: UITableView!
-//
-//    var sightSeeings = [FreeSightseeing]() {
-//        didSet {
-//            tableView.reloadData()
-//        }
-//    }
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        tableView.dataSource = self
-//        loadData()
-//    }
-//
-//    func loadData() {
-//        sightSeeings = FreeSightseeing.freeSightseeing
-//       }
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let detailVC = segue.destination as? FreeDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
-//            fatalError("failed to get indexPath and detailVC")
-//        }
-//        let sightseeing = sightSeeings[indexPath.row]
-//        detailVC.freesightseeing = sightseeing
-//    }
-//
-//}
-//
-//extension FreeSightseeingViewController: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return sightSeeings.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "FreeCell", for: indexPath)
-//
-//        let sightSeeing = sightSeeings[indexPath.row]
-//        cell.textLabel?.text = sightSeeing.title
-//
-//        return cell
-//    }
-//}
-
