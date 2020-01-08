@@ -29,7 +29,7 @@ struct CreperieAPIClient {
         request.httpMethod = "GET"
         
         // from Postman my header has keys: "Authorization", Value: "Bearer"
-        request.addValue("Bearer 6cwXbv6RK9NXPcCRTbpRS7OEmkIIUnX9IhvIgFuFZFvxhZIJSO7zn_tkqjorf2itPPVo8zqDsSQ7doMV3riuMd7s7n545OE8ONY2dfUCLFd7yUBnWjMgjdoN1aETXnYx", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(SecretKey.apikey)", forHTTPHeaderField: "Authorization")
         
         NetworkHelper.shared.performDataTask(with: request) {(result) in
             switch result {
