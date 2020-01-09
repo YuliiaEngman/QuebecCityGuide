@@ -27,6 +27,7 @@ class FreeDetailViewController: UIViewController {
     }
     
     func updateUI() {
+        
         if let freeSightseeing = freesightseeing {
         image.image = UIImage(named: freeSightseeing.image)
         sightseeingLabel.text = freeSightseeing.name
@@ -35,6 +36,10 @@ class FreeDetailViewController: UIViewController {
             image.image = UIImage(named: budgetSightseeing.image)
             sightseeingLabel.text = budgetSightseeing.name
             sightseeingTextDescription.text = budgetSightseeing.description
+        } else if let luxurySightseeing = luxurySightseeing {
+            image.image = UIImage(named: luxurySightseeing.image)
+            sightseeingLabel.text = luxurySightseeing.name
+            sightseeingTextDescription.text = luxurySightseeing.description
         }
     }
     
@@ -55,7 +60,15 @@ class FreeDetailViewController: UIViewController {
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
         safariVC.delegate = self
-    }
+            
+        } else if let luxurySightseeing = luxurySightseeing {
+            guard let url = URL(string: luxurySightseeing.url) else {
+                return
+            }
+            let safariVC = SFSafariViewController(url: url)
+            present(safariVC, animated: true, completion: nil)
+            safariVC.delegate = self
+        }
     }
 }
 
