@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SafariServices
 
 class FreeDetailViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var sightseeingLabel: UILabel!
     @IBOutlet weak var sightseeingTextDescription: UITextView!
+    
+    @IBOutlet weak var webButton: UIButton!
     
     var freesightseeing: FreeSightseeing?
     
@@ -29,23 +32,23 @@ class FreeDetailViewController: UIViewController {
         sightseeingLabel.text = freeSightseeing.name
         sightseeingTextDescription.text = freeSightseeing.description
     }
-
+    
+    @IBAction func actionWebButton(_ sender: Any) {
+        guard let url = URL(string: freesightseeing?.url ?? "") else {
+            return
+        }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+        safariVC.delegate = self
+    }
+    
 }
 
-//    var animal: ZooAnimal?
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        updateUI()
-//    }
-//
-//    func updateUI() {
-//    guard let zooAnimal = animal else { // we basically using constant zooAnimal to unwrap our optional!!!
-//    fatalError("couldn't set animal object, check prepare(for segue: )")
-//    }
-//        navigationItem.title = zooAnimal.name
-//        animalImageView.image = UIImage(named: zooAnimal.imageNumber.description)
-//        animalInfoTextView.text = zooAnimal.info
-//        animalOrigin.text = zooAnimal.origin
-//        animalClassificationLabel.text = zooAnimal.classification
-//}
+extension FreeDetailViewController: SFSafariViewControllerDelegate {
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+}
+
+

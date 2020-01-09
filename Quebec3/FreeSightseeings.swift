@@ -13,10 +13,11 @@ struct FreeSightseeing {
     let name: String
     let image: String
     let description: String
+    let url: String
     
     static let freeSightseeing: [FreeSightseeing] = [
-        FreeSightseeing(title: "Walk in the city", name: "Explore City On Your Own", image: "FCityOnOwn", description: "Enjoy in your own pace the beuty of Quebec City by walking on it's streets during the day and night."),
-        FreeSightseeing(title: "Take a Free City Tour", name: "Explore City With The Guide", image: "FStreetDay", description: "Explore the City with funny local guide - Samuel. He will tell you many interesting facts about the city and you will learn a lot new information about Canadians in general and Quebecioans in particular. Find more at his website: www.afreetourofquebec.com. If you like the tour (and we are sure that you will like it) leave him some tips based on your budget."),
+        FreeSightseeing(title: "Walk in the city", name: "Explore City On Your Own", image: "FCityOnOwn", description: "Enjoy in your own pace the beuty of Quebec City by walking on it's streets during the day and night.", url: "https://maps-quebec-city.com/old-quebec-tourist-map"),
+        FreeSightseeing(title: "Take a Free City Tour", name: "Explore City With The Guide", image: "FStreetDay", description: "Explore the City with funny local guide - Samuel. He will tell you many interesting facts about the city and you will learn a lot new information about Canadians in general and Quebecioans in particular. Find more at his website: www.afreetourofquebec.com. If you like the tour (and we are sure that you will like it) leave him some tips based on your budget.", url: "https://www.afreetourofquebec.com"),
     ]
 }
 

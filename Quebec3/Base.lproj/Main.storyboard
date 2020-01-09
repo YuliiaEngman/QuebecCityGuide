@@ -401,8 +401,11 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dmL-qn-fR6">
-                                <rect key="frame" x="20" y="426.5" width="374" height="332.5"/>
+                                <rect key="frame" x="20" y="426.5" width="374" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="5Ru-YH-hxz"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -417,18 +420,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fv-5U-jpc">
+                                <rect key="frame" x="20" y="699" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Zg-JX-6zU"/>
+                                </constraints>
+                                <state key="normal" title="WebSite"/>
+                                <connections>
+                                    <action selector="actionWebButton:" destination="GWs-CP-7ZQ" eventType="touchUpInside" id="eSO-mK-Nsw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vBB-yR-RRd" firstAttribute="top" secondItem="96S-Np-yr9" secondAttribute="top" id="1Pk-wD-YpP"/>
-                            <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="dmL-qn-fR6" secondAttribute="trailing" constant="20" id="63g-rL-Tag"/>
+                            <constraint firstItem="dmL-qn-fR6" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="8V2-gl-3Yd"/>
+                            <constraint firstItem="dmL-qn-fR6" firstAttribute="top" secondItem="3Lq-TA-PCT" secondAttribute="bottom" constant="20" id="9Lv-IU-IbE"/>
                             <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="3Lq-TA-PCT" secondAttribute="trailing" constant="20" id="BLT-Xc-hl1"/>
                             <constraint firstItem="3Lq-TA-PCT" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="Mws-QG-54D"/>
-                            <constraint firstItem="dmL-qn-fR6" firstAttribute="top" secondItem="3Lq-TA-PCT" secondAttribute="bottom" constant="20" id="Phg-UN-Yuo"/>
-                            <constraint firstItem="dmL-qn-fR6" firstAttribute="bottom" secondItem="96S-Np-yr9" secondAttribute="bottom" id="WWB-Rt-bTH"/>
-                            <constraint firstItem="dmL-qn-fR6" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="eel-lw-erj"/>
+                            <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="dmL-qn-fR6" secondAttribute="trailing" constant="20" id="Psq-ls-6SB"/>
+                            <constraint firstItem="4Fv-5U-jpc" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" constant="20" id="cPa-fF-cbw"/>
+                            <constraint firstItem="96S-Np-yr9" firstAttribute="bottom" secondItem="4Fv-5U-jpc" secondAttribute="bottom" constant="20" id="eIh-cI-QOV"/>
                             <constraint firstItem="vBB-yR-RRd" firstAttribute="trailing" secondItem="96S-Np-yr9" secondAttribute="trailing" id="mh9-0h-RBK"/>
                             <constraint firstItem="vBB-yR-RRd" firstAttribute="leading" secondItem="96S-Np-yr9" secondAttribute="leading" id="ot0-Rn-e48"/>
+                            <constraint firstItem="96S-Np-yr9" firstAttribute="trailing" secondItem="4Fv-5U-jpc" secondAttribute="trailing" constant="20" id="uq8-C1-Lqz"/>
                             <constraint firstItem="3Lq-TA-PCT" firstAttribute="top" secondItem="vBB-yR-RRd" secondAttribute="bottom" constant="20" id="vGs-YE-pVi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="96S-Np-yr9"/>
@@ -438,6 +453,7 @@
                         <outlet property="image" destination="vBB-yR-RRd" id="NWx-Cw-yF6"/>
                         <outlet property="sightseeingLabel" destination="3Lq-TA-PCT" id="7rO-9G-Td0"/>
                         <outlet property="sightseeingTextDescription" destination="dmL-qn-fR6" id="3se-cJ-f2b"/>
+                        <outlet property="webButton" destination="4Fv-5U-jpc" id="BYg-R9-AcL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgm-Cs-sdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -448,7 +464,7 @@
         <scene sceneID="njz-rA-CgC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZdK-0X-2sx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BUDGET" selectedImage="dollarsign.circle" catalog="system" id="gN0-NK-Wem"/>
+                    <tabBarItem key="tabBarItem" title="BUDGET" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle" id="gN0-NK-Wem"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jfb-hb-Vlg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9V4-q6-a7o">
@@ -491,7 +507,7 @@
         <scene sceneID="tji-EA-3hc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUY-Oy-51Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="LUXURY" selectedImage="dollarsign.square" catalog="system" id="4ac-mN-37N"/>
+                    <tabBarItem key="tabBarItem" title="LUXURY" image="dollarsign.square" catalog="system" id="4ac-mN-37N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpC-QH-Esi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -510,7 +526,7 @@
         <scene sceneID="gjd-RP-ePI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxr-FS-yTc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CREPERIES" selectedImage="hand.thumbsup" catalog="system" id="3nz-SW-Yph"/>
+                    <tabBarItem key="tabBarItem" title="CREPERIES" image="hand.thumbsup" catalog="system" id="3nz-SW-Yph"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -529,7 +545,7 @@
         <scene sceneID="IMZ-kO-PIm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uzY-JB-DHe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FREE" selectedImage="0.circle" catalog="system" id="Pcv-gI-HHv"/>
+                    <tabBarItem key="tabBarItem" title="FREE" image="0.circle" catalog="system" selectedImage="0.circle" id="Pcv-gI-HHv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hVA-SM-z9F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -544,11 +560,11 @@
             </objects>
             <point key="canvasLocation" x="2392.753623188406" y="-595.3125"/>
         </scene>
-        <!--Dictionary-->
+        <!--DICTIONARY-->
         <scene sceneID="2eo-ve-m0e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cfe-hv-lGN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dictionary" selectedImage="book" catalog="system" id="gYq-KL-yWN"/>
+                    <tabBarItem key="tabBarItem" title="DICTIONARY" image="book" catalog="system" id="gYq-KL-yWN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wQD-DC-1l5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>

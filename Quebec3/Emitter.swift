@@ -22,7 +22,7 @@ class Emitter {
         
         let cell = CAEmitterCell()
         cell.contents = image.cgImage
-        cell.birthRate = 1
+        cell.birthRate = 2
         cell.lifetime = 50.0
         cell.lifetimeRange = 0
         //cell.color = color.cgColor
