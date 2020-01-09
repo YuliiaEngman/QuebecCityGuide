@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree2" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
-                                <rect key="frame" x="0.0" y="43.5" width="414" height="819.00000000000091"/>
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
                                 <rect key="frame" x="0.0" y="824" width="414" height="38"/>
@@ -93,6 +93,9 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="jwg-bL-cHQ" kind="show" id="qHu-0y-feJ"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -127,6 +130,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfq-fS-Hmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="113.83928571428571"/>
+        </scene>
+        <!--Budget Detail View Controller-->
+        <scene sceneID="4nS-0l-eZe">
+            <objects>
+                <viewController id="jwg-bL-cHQ" customClass="BudgetDetailViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSa-aV-iTp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MRV-hh-mi0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ahQ-On-pbY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fq5-JY-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4252" y="114"/>
         </scene>
         <!--Luxery View Controller-->
         <scene sceneID="Uz4-zq-kIr">
@@ -172,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food copy" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-lL-9wL">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -365,7 +384,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament-1" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-JD-oDK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>

@@ -26,6 +26,7 @@
 		0F31C08823C6B8C800918323 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F31C08723C6B8C800918323 /* DictionaryViewController.swift */; };
 		0F57B39723C798640094B3AC /* Bonj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F57B39623C798630094B3AC /* Bonj.mp3 */; };
 		0F57B39923C7BC2B0094B3AC /* BudgetSightseeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */; };
+		0F6E97C623C7D0DF0063886A /* BudgetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E97C523C7D0DF0063886A /* BudgetDetailViewController.swift */; };
 		0F881E9C23C3EA7F009D0FC6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9B23C3EA7F009D0FC6 /* AppError.swift */; };
 		0F881E9E23C3EAB7009D0FC6 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */; };
 		0F881EA023C3EB43009D0FC6 /* FoodAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9F23C3EB43009D0FC6 /* FoodAPIClient.swift */; };
@@ -68,6 +69,7 @@
 		0F31C08723C6B8C800918323 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		0F57B39623C798630094B3AC /* Bonj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bonj.mp3; sourceTree = "<group>"; };
 		0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSightseeing.swift; sourceTree = "<group>"; };
+		0F6E97C523C7D0DF0063886A /* BudgetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailViewController.swift; sourceTree = "<group>"; };
 		0F881E9B23C3EA7F009D0FC6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		0F881E9F23C3EB43009D0FC6 /* FoodAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAPIClient.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				0F31C07F23C51B7500918323 /* Alerts.swift */,
 				0F28EC9D23C132D2007B9A25 /* LuxeryViewController.swift */,
 				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
+				0F6E97C523C7D0DF0063886A /* BudgetDetailViewController.swift */,
 				0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */,
 				0F28EC8223C12C20007B9A25 /* Assets.xcassets */,
 				0F28EC8423C12C20007B9A25 /* LaunchScreen.storyboard */,
@@ -283,6 +286,7 @@
 				0F28ECA023C13346007B9A25 /* CreperiesViewController.swift in Sources */,
 				0F31C08823C6B8C800918323 /* DictionaryViewController.swift in Sources */,
 				0F28ECA623C2CA18007B9A25 /* FreeSightseeings.swift in Sources */,
+				0F6E97C623C7D0DF0063886A /* BudgetDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
