@@ -9,11 +9,53 @@
 import UIKit
 
 class BudgetViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+   var budgetSightSeeings = [BudgetSightseeing]() {
+            didSet {
+                tableView.reloadData()
+            }
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            tableView.dataSource = self
+            loadData()
+        }
+        
+        func loadData() {
+            budgetSightSeeings = BudgetSightseeing.budgetSightseeing
+           }
+        
+//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard let detailVC = segue.destination as? FreeDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+//                fatalError("failed to get indexPath and detailVC")
+//            }
+//            let sightseeing = budgetSightSeeings[indexPath.row]
+//            detailVC.freesightseeing = sightseeing
+//        }
 
     }
-    
 
+    extension BudgetViewController: UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return budgetSightSeeings.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BudgetCell", for: indexPath)
+            
+            let budgetSightSeeing = budgetSightSeeings[indexPath.row]
+            cell.textLabel?.text = budgetSightSeeing.title
+            
+            return cell
+        }
+    }
+
+    extension BudgetViewController: UITableViewDelegate {
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 140
+        }
 }
