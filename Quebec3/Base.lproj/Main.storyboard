@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree2" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
-                                <rect key="frame" x="0.0" y="43.5" width="414" height="819.00000000000091"/>
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
                                 <rect key="frame" x="0.0" y="824" width="414" height="38"/>
@@ -138,7 +138,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food copy" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-lL-9wL">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -200,6 +200,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEs-Qg-8yG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="1573.6607142857142"/>
+        </scene>
+        <!--Dictionary View Controller-->
+        <scene sceneID="9xR-ax-Qoa">
+            <objects>
+                <viewController id="iif-QO-WqX" customClass="DictionaryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4q7-ZR-fPn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-0X-s6I">
+                                <rect key="frame" x="20" y="207" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjQ-tu-EmE">
+                                <rect key="frame" x="236" y="207" width="178" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bonjour"/>
+                                <connections>
+                                    <action selector="bonlourActionButton:" destination="iif-QO-WqX" eventType="touchUpInside" id="zvC-by-8st"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dng-fl-GfL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="khl-0W-u5J"/>
+                    <connections>
+                        <outlet property="bonjourButton" destination="tjQ-tu-EmE" id="Ke9-K2-pG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYb-1M-X94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3303" y="2310"/>
         </scene>
         <!--Creperies Detail View Controller-->
         <scene sceneID="HRl-MB-PhM">
@@ -295,7 +331,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament-1" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-JD-oDK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -412,7 +448,7 @@
         <scene sceneID="njz-rA-CgC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZdK-0X-2sx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BUDGET" id="gN0-NK-Wem"/>
+                    <tabBarItem key="tabBarItem" title="BUDGET" selectedImage="dollarsign.circle" catalog="system" id="gN0-NK-Wem"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jfb-hb-Vlg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9V4-q6-a7o">
@@ -444,6 +480,7 @@
                         <segue destination="ZdK-0X-2sx" kind="relationship" relationship="viewControllers" id="tMp-2F-zyL"/>
                         <segue destination="OUY-Oy-51Q" kind="relationship" relationship="viewControllers" id="eim-dX-Sb6"/>
                         <segue destination="nxr-FS-yTc" kind="relationship" relationship="viewControllers" id="hFG-IT-otL"/>
+                        <segue destination="Cfe-hv-lGN" kind="relationship" relationship="viewControllers" id="6Ad-lD-rIp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOw-pi-CYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -454,7 +491,7 @@
         <scene sceneID="tji-EA-3hc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUY-Oy-51Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="LUXURY" id="4ac-mN-37N"/>
+                    <tabBarItem key="tabBarItem" title="LUXURY" selectedImage="dollarsign.square" catalog="system" id="4ac-mN-37N"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpC-QH-Esi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -473,7 +510,7 @@
         <scene sceneID="gjd-RP-ePI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nxr-FS-yTc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CREPERIES" id="3nz-SW-Yph"/>
+                    <tabBarItem key="tabBarItem" title="CREPERIES" selectedImage="hand.thumbsup" catalog="system" id="3nz-SW-Yph"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -492,7 +529,7 @@
         <scene sceneID="IMZ-kO-PIm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uzY-JB-DHe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FREE" id="Pcv-gI-HHv"/>
+                    <tabBarItem key="tabBarItem" title="FREE" selectedImage="0.circle" catalog="system" id="Pcv-gI-HHv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hVA-SM-z9F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -507,14 +544,38 @@
             </objects>
             <point key="canvasLocation" x="2392.753623188406" y="-595.3125"/>
         </scene>
+        <!--Dictionary-->
+        <scene sceneID="2eo-ve-m0e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cfe-hv-lGN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dictionary" selectedImage="book" catalog="system" id="gYq-KL-yWN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wQD-DC-1l5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iif-QO-WqX" kind="relationship" relationship="rootViewController" id="ubJ-Y6-xd3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1J-4H-t6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="2299"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="0.circle" catalog="system" width="64" height="60"/>
         <image name="Crapes" width="1472" height="924"/>
         <image name="Food copy" width="3007" height="3221"/>
         <image name="Luxury" width="3024" height="4032"/>
         <image name="Parlament-1" width="1646" height="3011"/>
         <image name="Tree2" width="2732" height="4024"/>
         <image name="View" width="3024" height="4032"/>
+        <image name="book" catalog="system" width="64" height="50"/>
+        <image name="dollarsign.circle" catalog="system" width="64" height="60"/>
+        <image name="dollarsign.square" catalog="system" width="64" height="56"/>
+        <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
         <image name="now" width="16" height="16"/>
     </resources>
 </document>
