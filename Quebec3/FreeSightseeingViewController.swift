@@ -59,3 +59,4 @@ extension FreeDetailViewController: UITableViewDelegate {
         return 140
     }
 }
+

@@ -94,7 +94,7 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="jwg-bL-cHQ" kind="show" id="qHu-0y-feJ"/>
+                                                    <segue destination="GWs-CP-7ZQ" kind="show" id="8Su-oM-sqG"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -131,26 +131,10 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="113.83928571428571"/>
         </scene>
-        <!--Budget Detail View Controller-->
-        <scene sceneID="4nS-0l-eZe">
-            <objects>
-                <viewController id="jwg-bL-cHQ" customClass="BudgetDetailViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kSa-aV-iTp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="MRV-hh-mi0"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ahQ-On-pbY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fq5-JY-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4252" y="114"/>
-        </scene>
-        <!--Luxery View Controller-->
+        <!--Luxury View Controller-->
         <scene sceneID="Uz4-zq-kIr">
             <objects>
-                <viewController id="Fca-t2-vBC" customClass="LuxeryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fca-t2-vBC" customClass="LuxuryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yx9-qQ-7vX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +144,41 @@
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRB-6f-Z9G">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QEg-ue-ZJu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LuxuryCell" textLabel="K7v-mv-hEN" style="IBUITableViewCellStyleDefault" id="Lmh-ur-DsB">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lmh-ur-DsB" id="jnc-5i-sNn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K7v-mv-hEN">
+                                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="GWs-CP-7ZQ" kind="show" id="ttw-EB-pbk"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QEg-ue-ZJu" secondAttribute="trailing" id="5Hr-J6-Yno"/>
+                                    <constraint firstItem="QEg-ue-ZJu" firstAttribute="leading" secondItem="WRB-6f-Z9G" secondAttribute="leading" id="Etq-ky-DYT"/>
+                                    <constraint firstAttribute="bottom" secondItem="QEg-ue-ZJu" secondAttribute="bottom" id="cVg-3Q-Nmc"/>
+                                    <constraint firstItem="QEg-ue-ZJu" firstAttribute="top" secondItem="WRB-6f-Z9G" secondAttribute="top" id="xT3-In-efi"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -177,6 +195,9 @@
                         <viewLayoutGuide key="safeArea" id="SZO-TG-Q9n"/>
                     </view>
                     <navigationItem key="navigationItem" id="8JZ-oj-GxL"/>
+                    <connections>
+                        <outlet property="tableView" destination="QEg-ue-ZJu" id="MNh-l1-RID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="097-ln-J2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -511,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgm-Cs-sdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4252.1739130434789" y="-595.3125"/>
+            <point key="canvasLocation" x="4397" y="-595"/>
         </scene>
         <!--BUDGET-->
         <scene sceneID="njz-rA-CgC">
@@ -647,4 +668,7 @@
         <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
         <image name="now" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ttw-EB-pbk"/>
+    </inferredMetricsTieBreakers>
 </document>

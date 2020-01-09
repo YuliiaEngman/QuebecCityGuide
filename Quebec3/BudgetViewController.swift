@@ -30,7 +30,7 @@ class BudgetViewController: UIViewController {
            }
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let detailVC = segue.destination as? BudgetDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            guard let detailVC = segue.destination as? FreeDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
                 fatalError("failed to get indexPath and detailVC")
             }
             let sightseeing = budgetSightSeeings[indexPath.row]
