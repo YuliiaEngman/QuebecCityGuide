@@ -65,6 +65,6 @@ extension CreperiesViewController: UITableViewDataSource {
 
 extension CreperiesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 200
     }
 }
