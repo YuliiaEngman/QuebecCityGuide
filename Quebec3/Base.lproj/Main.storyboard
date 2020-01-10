@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree2" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-GF-WnO">
-                                <rect key="frame" x="0.0" y="43.5" width="414" height="819.00000000000091"/>
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="819"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-6q-yLS">
                                 <rect key="frame" x="0.0" y="824" width="414" height="38"/>
@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
-        <!--Budget View Controller-->
+        <!--BUDGET SIGHTSEEING-->
         <scene sceneID="CVO-bm-j9x">
             <objects>
                 <viewController id="Omr-KY-65b" customClass="BudgetViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ef-BZ-bHw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vjQ-zj-PSf"/>
+                    <navigationItem key="navigationItem" title="BUDGET SIGHTSEEING" id="vjQ-zj-PSf"/>
                     <connections>
                         <outlet property="tableView" destination="sGX-bR-yUW" id="pfn-3s-Dyp"/>
                     </connections>
@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="113.83928571428571"/>
         </scene>
-        <!--Luxury View Controller-->
+        <!--LUXURY SIGHTSEEING-->
         <scene sceneID="Uz4-zq-kIr">
             <objects>
                 <viewController id="Fca-t2-vBC" customClass="LuxuryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SZO-TG-Q9n"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8JZ-oj-GxL"/>
+                    <navigationItem key="navigationItem" title="LUXURY SIGHTSEEING" id="8JZ-oj-GxL"/>
                     <connections>
                         <outlet property="tableView" destination="QEg-ue-ZJu" id="MNh-l1-RID"/>
                     </connections>
@@ -212,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food copy" translatesAutoresizingMaskIntoConstraints="NO" id="vxn-lL-9wL">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-yM-6um">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -275,7 +275,7 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="1573.6607142857142"/>
         </scene>
-        <!--Dictionary View Controller-->
+        <!--BASIC FRENCH DICTIONARY-->
         <scene sceneID="9xR-ax-Qoa">
             <objects>
                 <viewController id="iif-QO-WqX" customClass="DictionaryViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
@@ -448,10 +448,9 @@
                                     <action selector="goodbyeActionButton:" destination="iif-QO-WqX" eventType="touchUpInside" id="FUO-Ue-hwp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy NY!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-ed-VF2">
-                                <rect key="frame" x="20" y="535" width="150" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy New Year!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-ed-VF2">
+                                <rect key="frame" x="20" y="535" width="150" height="50.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ElJ-fG-GP1"/>
                                     <constraint firstAttribute="width" constant="150" id="tgN-T4-TEZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
@@ -525,7 +524,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dng-fl-GfL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="khl-0W-u5J"/>
+                    <navigationItem key="navigationItem" title="BASIC FRENCH DICTIONARY" id="khl-0W-u5J"/>
                     <connections>
                         <outlet property="bonjourButton" destination="tjQ-tu-EmE" id="Ke9-K2-pG9"/>
                         <outlet property="textView" destination="x05-U7-1MY" id="6JZ-hc-R9w"/>
@@ -611,7 +610,7 @@
             </objects>
             <point key="canvasLocation" x="4207.2463768115949" y="1573.6607142857142"/>
         </scene>
-        <!--Free Sightseeing View Controller-->
+        <!--FREE SIGHTSEEING-->
         <scene sceneID="8xy-iQ-tzj">
             <objects>
                 <viewController id="Rqi-Ht-AYS" customClass="FreeSightseeingViewController" customModule="New_Year_in_Quebec_City" customModuleProvider="target" sceneMemberID="viewController">
@@ -620,7 +619,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parlament-1" translatesAutoresizingMaskIntoConstraints="NO" id="mWE-Js-cbg">
-                                <rect key="frame" x="0.0" y="56" width="414.00000000000045" height="703"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-JD-oDK">
                                 <rect key="frame" x="0.0" y="56" width="414" height="703"/>
@@ -666,7 +665,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zih-IR-6Te"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YIt-7w-bj2"/>
+                    <navigationItem key="navigationItem" title="FREE SIGHTSEEING" id="YIt-7w-bj2"/>
                     <connections>
                         <outlet property="tableView" destination="a6q-uJ-gek" id="aMh-It-bb3"/>
                     </connections>
@@ -760,6 +759,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9V4-q6-a7o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -802,6 +804,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hpC-QH-Esi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -821,6 +826,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AGb-sR-e54">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -840,6 +848,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hVA-SM-z9F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -859,6 +870,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wQD-DC-1l5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="26"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -885,6 +899,6 @@
         <image name="now" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ttw-EB-pbk"/>
+        <segue reference="ypD-za-qay"/>
     </inferredMetricsTieBreakers>
 </document>

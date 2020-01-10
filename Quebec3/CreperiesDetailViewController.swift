@@ -22,13 +22,13 @@ class CreperiesDetailViewController: UIViewController {
     @IBOutlet weak var buttonWEBlabel: UIButton!
     
     
-    
-    
     var oneCreperie: Business?
     
-
+    private var imageURL = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.image = nil
         updateUI()
     }
     
@@ -42,7 +42,7 @@ class CreperiesDetailViewController: UIViewController {
         yelpRatingLabel.text = "Rating on Yelp is \(oneCreperie.rating) ⭐️"
         
         let imageURL = oneCreperie.imageURL
-        
+
         image.getImage(with: imageURL) {[weak self] result in switch result {
         case .failure:
             DispatchQueue.main.async {
@@ -53,9 +53,7 @@ class CreperiesDetailViewController: UIViewController {
                 self?.image.image = creperieImage
             }
             }
-            
         }
-    
     }
     
     @IBAction func actionWEBbutton(_ sender: UIButton) {

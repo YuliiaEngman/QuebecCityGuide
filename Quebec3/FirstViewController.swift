@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
     func snowDribbbleBalls() {
         let emitter = Emitter.get(with: UIImage(named: "snow-particle.png")!)
         emitter.emitterPosition = CGPoint(x: view.frame.width / 2, y: 0) // position where snow starts
-        // now makink that snow comes from of the width of the top
+        // now making that snow comes from of the width of the top
         emitter.emitterSize = CGSize(width: view.frame.width, height: 2)
         view.layer.addSublayer(emitter)
     }

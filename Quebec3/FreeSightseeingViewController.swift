@@ -23,7 +23,7 @@ class FreeSightseeingViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         loadData()
-        navigationItem.title = "FREE SIGHTSEEING"
+        //navigationItem.title = "FREE SIGHTSEEING"
         
 //        let customFont = UIFont(name: "Helvetica-Bold", size: 15)
 //        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : customFont!]

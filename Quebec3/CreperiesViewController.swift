@@ -27,14 +27,17 @@ class CreperiesViewController: UIViewController {
     }
     
     func loadCafes() {
-        CreperieAPIClient.fetchCreperie{[weak self] result in
+        CreperieAPIClient.fetchCreperie { [weak self] result in
             switch result {
             case .failure(let appError):
                 DispatchQueue.main.async {
                     self?.showAlert(title: "App Error", message: "\(appError)")
                 }
             case .success(let businesses):
-                self?.creperies = businesses
+                DispatchQueue.main.async {
+                    self?.creperies = businesses
+                }
+                
             }
         }
     }
