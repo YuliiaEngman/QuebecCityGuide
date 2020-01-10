@@ -23,6 +23,7 @@ class BudgetViewController: UIViewController {
             super.viewDidLoad()
             tableView.dataSource = self
             loadData()
+            navigationItem.title = "BUDGET SIGHTSEEING"
         }
         
         func loadData() {

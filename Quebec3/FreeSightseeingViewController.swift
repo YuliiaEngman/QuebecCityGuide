@@ -23,6 +23,17 @@ class FreeSightseeingViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         loadData()
+        navigationItem.title = "FREE SIGHTSEEING"
+        
+//        let customFont = UIFont(name: "Helvetica-Bold", size: 15)
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : customFont!]
+//
+//        if let font = UIFont(name: "HoeflerTextItalic", size: 40) {
+//
+//            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: font]
+//
+//        }
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "HoeflerTextItalic", size: 35)!]
     }
     
     func loadData() {
@@ -59,4 +70,7 @@ extension FreeDetailViewController: UITableViewDelegate {
         return 200
     }
 }
+
+
+
 

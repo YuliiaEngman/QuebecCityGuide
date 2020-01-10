@@ -19,6 +19,7 @@ class DictionaryViewController: UIViewController, AVAudioPlayerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "BASIC FRENCH DICTIONARY"
         objPlayer?.delegate = self
     }
     

@@ -23,6 +23,7 @@ class LuxuryViewController: UIViewController {
             super.viewDidLoad()
             tableView.dataSource = self
             loadData()
+            navigationItem.title = "LUXURY SIGHTSEEING"
         }
         
         func loadData() {
