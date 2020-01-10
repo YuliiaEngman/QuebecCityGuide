@@ -17,7 +17,7 @@ let name = "John Appleseed"
 
 ## Screenshot of the app:
 
-![login screen1](Assets/loginscreen1.png)
+![login screen cropped](Assets/loginscreencropped.png)
 
 ## GIF:
 
