@@ -13,7 +13,6 @@
 		0F28EC8123C12C1D007B9A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28EC7F23C12C1D007B9A25 /* Main.storyboard */; };
 		0F28EC8323C12C20007B9A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F28EC8223C12C20007B9A25 /* Assets.xcassets */; };
 		0F28EC8623C12C20007B9A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28EC8423C12C20007B9A25 /* LaunchScreen.storyboard */; };
-		0F28EC9123C12C20007B9A25 /* Quebec3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9023C12C20007B9A25 /* Quebec3Tests.swift */; };
 		0F28EC9C23C12DD5007B9A25 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */; };
 		0F28ECA023C13346007B9A25 /* CreperiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28EC9F23C13346007B9A25 /* CreperiesViewController.swift */; };
 		0F28ECA223C155A2007B9A25 /* FreeSightseeingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */; };
@@ -31,7 +30,6 @@
 		0F4DEDAD23C8A98600F683C9 /* Pardon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */; };
 		0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */; };
 		0F4DEDB323C8B13800F683C9 /* BonAnnee.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */; };
-		0F4DEDB823C90CF900F683C9 /* HappyNY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */; };
 		0F4DEDBA23C91AB600F683C9 /* HappyNYCropped.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */; };
 		0F57B39923C7BC2B0094B3AC /* BudgetSightseeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */; };
 		0F881E9C23C3EA7F009D0FC6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9B23C3EA7F009D0FC6 /* AppError.swift */; };
@@ -64,8 +62,6 @@
 		0F28EC8523C12C20007B9A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F28EC8723C12C20007B9A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F28EC8C23C12C20007B9A25 /* New-Year-in-Quebec-CityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "New-Year-in-Quebec-CityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F28EC9023C12C20007B9A25 /* Quebec3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quebec3Tests.swift; sourceTree = "<group>"; };
-		0F28EC9223C12C20007B9A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
 		0F28EC9F23C13346007B9A25 /* CreperiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreperiesViewController.swift; sourceTree = "<group>"; };
 		0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeSightseeingViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +79,6 @@
 		0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pardon.mp3; sourceTree = "<group>"; };
 		0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Goodbye.mp3; sourceTree = "<group>"; };
 		0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BonAnnee.m4a; sourceTree = "<group>"; };
-		0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HappyNY.mp3; sourceTree = "<group>"; };
 		0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HappyNYCropped.mp3; sourceTree = "<group>"; };
 		0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSightseeing.swift; sourceTree = "<group>"; };
 		0F881E9B23C3EA7F009D0FC6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -119,7 +114,6 @@
 			children = (
 				0F31C08223C6303E00918323 /* Secrets */,
 				0F28EC7823C12C1D007B9A25 /* Quebec3 */,
-				0F28EC8F23C12C20007B9A25 /* Quebec3Tests */,
 				0F28EC7723C12C1D007B9A25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,36 +130,13 @@
 		0F28EC7823C12C1D007B9A25 /* Quebec3 */ = {
 			isa = PBXGroup;
 			children = (
-				0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */,
-				0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */,
-				0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */,
-				0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */,
-				0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */,
-				0F4DEDAA23C8A7FE00F683C9 /* HowAreYou.mp3 */,
-				0F4DEDA823C8A66E00F683C9 /* Non.mp3 */,
-				0F4DEDA623C8A53000F683C9 /* Oui.mp3 */,
-				0F4DEDA423C8A30900F683C9 /* Bonjour.mp3 */,
+				0F4DEDC223C924BC00F683C9 /* Helpers */,
+				0F4DEDC123C9248A00F683C9 /* DataAndAPI */,
+				0F4DEDC023C9243C00F683C9 /* ViewControllers */,
+				0F4DEDBF23C923EF00F683C9 /* AudioFiles */,
 				0F28EC7923C12C1D007B9A25 /* AppDelegate.swift */,
 				0F28EC7B23C12C1D007B9A25 /* SceneDelegate.swift */,
-				0F28EC7D23C12C1D007B9A25 /* FirstViewController.swift */,
 				0F28EC7F23C12C1D007B9A25 /* Main.storyboard */,
-				0F4DEDA223C8A19200F683C9 /* SilVuPle.mp3 */,
-				0F31C08723C6B8C800918323 /* DictionaryViewController.swift */,
-				0FF52E4323C3F1920049EF4C /* CreperiesDetailViewController.swift */,
-				0F28ECA323C2C7EF007B9A25 /* FreeDetailViewController.swift */,
-				0FA7C06123C7DF4C001172EA /* LuxurySightseeing.swift */,
-				0F881E9B23C3EA7F009D0FC6 /* AppError.swift */,
-				0FA7C06323C7E278001172EA /* LuxeryViewController.swift */,
-				0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */,
-				0F881E9F23C3EB43009D0FC6 /* FoodAPIClient.swift */,
-				0F881EA123C3EC08009D0FC6 /* FoodModel.swift */,
-				0F881EA323C3EC3F009D0FC6 /* UIImage+Extensions.swift */,
-				0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */,
-				0F28ECA523C2CA18007B9A25 /* FreeSightseeings.swift */,
-				0F28EC9F23C13346007B9A25 /* CreperiesViewController.swift */,
-				0F31C07F23C51B7500918323 /* Alerts.swift */,
-				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
-				0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */,
 				0F28EC8223C12C20007B9A25 /* Assets.xcassets */,
 				0F28EC8423C12C20007B9A25 /* LaunchScreen.storyboard */,
 				0F28EC8723C12C20007B9A25 /* Info.plist */,
@@ -174,21 +145,66 @@
 			path = Quebec3;
 			sourceTree = "<group>";
 		};
-		0F28EC8F23C12C20007B9A25 /* Quebec3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0F28EC9023C12C20007B9A25 /* Quebec3Tests.swift */,
-				0F28EC9223C12C20007B9A25 /* Info.plist */,
-			);
-			path = Quebec3Tests;
-			sourceTree = "<group>";
-		};
 		0F31C08223C6303E00918323 /* Secrets */ = {
 			isa = PBXGroup;
 			children = (
 				0F31C08323C6305E00918323 /* Secrets.swift */,
 			);
 			path = Secrets;
+			sourceTree = "<group>";
+		};
+		0F4DEDBF23C923EF00F683C9 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0F4DEDA223C8A19200F683C9 /* SilVuPle.mp3 */,
+				0F4DEDA423C8A30900F683C9 /* Bonjour.mp3 */,
+				0F4DEDA623C8A53000F683C9 /* Oui.mp3 */,
+				0F4DEDA823C8A66E00F683C9 /* Non.mp3 */,
+				0F4DEDAA23C8A7FE00F683C9 /* HowAreYou.mp3 */,
+				0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */,
+				0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */,
+				0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */,
+				0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		0F4DEDC023C9243C00F683C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F28EC7D23C12C1D007B9A25 /* FirstViewController.swift */,
+				0F31C08723C6B8C800918323 /* DictionaryViewController.swift */,
+				0FF52E4323C3F1920049EF4C /* CreperiesDetailViewController.swift */,
+				0F28ECA323C2C7EF007B9A25 /* FreeDetailViewController.swift */,
+				0FA7C06323C7E278001172EA /* LuxeryViewController.swift */,
+				0F28ECA123C155A2007B9A25 /* FreeSightseeingViewController.swift */,
+				0F28EC9F23C13346007B9A25 /* CreperiesViewController.swift */,
+				0F28EC9B23C12DD5007B9A25 /* BudgetViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0F4DEDC123C9248A00F683C9 /* DataAndAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */,
+				0F28ECA523C2CA18007B9A25 /* FreeSightseeings.swift */,
+				0F881EA123C3EC08009D0FC6 /* FoodModel.swift */,
+				0F881E9F23C3EB43009D0FC6 /* FoodAPIClient.swift */,
+				0FA7C06123C7DF4C001172EA /* LuxurySightseeing.swift */,
+			);
+			path = DataAndAPI;
+			sourceTree = "<group>";
+		};
+		0F4DEDC223C924BC00F683C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F31C07F23C51B7500918323 /* Alerts.swift */,
+				0F881EA323C3EC3F009D0FC6 /* UIImage+Extensions.swift */,
+				0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */,
+				0F881E9B23C3EA7F009D0FC6 /* AppError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +295,6 @@
 				0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */,
 				0F28EC8623C12C20007B9A25 /* LaunchScreen.storyboard in Resources */,
 				0F4DEDBA23C91AB600F683C9 /* HappyNYCropped.mp3 in Resources */,
-				0F4DEDB823C90CF900F683C9 /* HappyNY.mp3 in Resources */,
 				0F4DEDA723C8A53000F683C9 /* Oui.mp3 in Resources */,
 				0F28EC8323C12C20007B9A25 /* Assets.xcassets in Resources */,
 				0F28EC8123C12C1D007B9A25 /* Main.storyboard in Resources */,
@@ -330,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F28EC9123C12C20007B9A25 /* Quebec3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
