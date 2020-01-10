@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var startButton: UIButton!
+    
+    var objPlayer: AVAudioPlayer?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         snowDribbbleBalls()
-        // Do any additional setup after loading the view.
+        objPlayer?.delegate = self
+        playAudioFile()
     }
     
     func snowDribbbleBalls() {
@@ -28,6 +32,25 @@ class FirstViewController: UIViewController {
         view.layer.addSublayer(emitter)
     }
 
+    
+    func playAudioFile() {
+            guard let url = Bundle.main.url(forResource: "HappyNYCropped", withExtension: "mp3") else {
+                print("can't find resource")
+                return
+        }
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+                try AVAudioSession.sharedInstance().setActive(true)
+    
+                objPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+    
+                guard let aPlayer = objPlayer else { return }
+                aPlayer.play()
+    
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
 
 }
 

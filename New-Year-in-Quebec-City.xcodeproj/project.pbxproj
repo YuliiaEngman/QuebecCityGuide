@@ -31,6 +31,8 @@
 		0F4DEDAD23C8A98600F683C9 /* Pardon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */; };
 		0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */; };
 		0F4DEDB323C8B13800F683C9 /* BonAnnee.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */; };
+		0F4DEDB823C90CF900F683C9 /* HappyNY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */; };
+		0F4DEDBA23C91AB600F683C9 /* HappyNYCropped.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */; };
 		0F57B39923C7BC2B0094B3AC /* BudgetSightseeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */; };
 		0F881E9C23C3EA7F009D0FC6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9B23C3EA7F009D0FC6 /* AppError.swift */; };
 		0F881E9E23C3EAB7009D0FC6 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */; };
@@ -81,6 +83,8 @@
 		0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pardon.mp3; sourceTree = "<group>"; };
 		0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Goodbye.mp3; sourceTree = "<group>"; };
 		0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BonAnnee.m4a; sourceTree = "<group>"; };
+		0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HappyNY.mp3; sourceTree = "<group>"; };
+		0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HappyNYCropped.mp3; sourceTree = "<group>"; };
 		0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSightseeing.swift; sourceTree = "<group>"; };
 		0F881E9B23C3EA7F009D0FC6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		0F881E9D23C3EAB7009D0FC6 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		0F28EC7823C12C1D007B9A25 /* Quebec3 */ = {
 			isa = PBXGroup;
 			children = (
+				0F4DEDB923C91AB600F683C9 /* HappyNYCropped.mp3 */,
+				0F4DEDB723C90CF900F683C9 /* HappyNY.mp3 */,
 				0F4DEDB223C8B13800F683C9 /* BonAnnee.m4a */,
 				0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */,
 				0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */,
@@ -272,6 +278,8 @@
 				0F4DEDA523C8A30900F683C9 /* Bonjour.mp3 in Resources */,
 				0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */,
 				0F28EC8623C12C20007B9A25 /* LaunchScreen.storyboard in Resources */,
+				0F4DEDBA23C91AB600F683C9 /* HappyNYCropped.mp3 in Resources */,
+				0F4DEDB823C90CF900F683C9 /* HappyNY.mp3 in Resources */,
 				0F4DEDA723C8A53000F683C9 /* Oui.mp3 in Resources */,
 				0F28EC8323C12C20007B9A25 /* Assets.xcassets in Resources */,
 				0F28EC8123C12C1D007B9A25 /* Main.storyboard in Resources */,
