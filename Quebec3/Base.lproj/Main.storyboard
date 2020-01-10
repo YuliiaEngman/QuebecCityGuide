@@ -448,6 +448,27 @@
                                     <action selector="goodbyeActionButton:" destination="iif-QO-WqX" eventType="touchUpInside" id="FUO-Ue-hwp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy NY!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-ed-VF2">
+                                <rect key="frame" x="20" y="535" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ElJ-fG-GP1"/>
+                                    <constraint firstAttribute="width" constant="150" id="tgN-T4-TEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXx-cS-ToB">
+                                <rect key="frame" x="190" y="535" width="204" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KpF-Uc-l0d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Bonne année!"/>
+                                <connections>
+                                    <action selector="bonAnneeActionButton:" destination="iif-QO-WqX" eventType="touchUpInside" id="RwT-wb-J4N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -455,9 +476,11 @@
                             <constraint firstItem="dng-fl-GfL" firstAttribute="trailing" secondItem="pbH-fv-bSM" secondAttribute="trailing" constant="20" id="1jP-vF-jLi"/>
                             <constraint firstItem="wNQ-Zc-JjV" firstAttribute="leading" secondItem="9hM-cF-b2q" secondAttribute="trailing" constant="20" id="2uC-rH-lMQ"/>
                             <constraint firstItem="hsN-xH-zew" firstAttribute="top" secondItem="ZqM-uU-qSD" secondAttribute="bottom" constant="8" id="3iz-PJ-aGK"/>
+                            <constraint firstItem="1VU-ed-VF2" firstAttribute="top" secondItem="hsN-xH-zew" secondAttribute="bottom" constant="8" symbolic="YES" id="5zo-n0-YW4"/>
                             <constraint firstItem="x05-U7-1MY" firstAttribute="top" secondItem="dng-fl-GfL" secondAttribute="top" constant="8" id="7Ha-Ss-Azk"/>
                             <constraint firstItem="pbH-fv-bSM" firstAttribute="leading" secondItem="1Hr-Ve-gSV" secondAttribute="trailing" constant="20" id="7rf-Et-pn3"/>
                             <constraint firstItem="2XB-KX-9mJ" firstAttribute="leading" secondItem="8dx-uK-86r" secondAttribute="trailing" constant="20" id="9CO-ru-Oqc"/>
+                            <constraint firstItem="FXx-cS-ToB" firstAttribute="leading" secondItem="1VU-ed-VF2" secondAttribute="trailing" constant="20" id="9Zn-Nw-g8e"/>
                             <constraint firstItem="1Hr-Ve-gSV" firstAttribute="top" secondItem="gxF-0X-s6I" secondAttribute="bottom" constant="8" id="ALC-u9-hnz"/>
                             <constraint firstItem="1Hr-Ve-gSV" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="ARW-oq-3NC"/>
                             <constraint firstItem="gxF-0X-s6I" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="AYP-6u-kAg"/>
@@ -475,6 +498,7 @@
                             <constraint firstItem="8dx-uK-86r" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="Vqi-9Z-GQL"/>
                             <constraint firstItem="hhx-IM-Gub" firstAttribute="top" secondItem="8dx-uK-86r" secondAttribute="bottom" constant="8" id="W49-JM-xcT"/>
                             <constraint firstItem="x05-U7-1MY" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="Wf7-6y-yYX"/>
+                            <constraint firstItem="dng-fl-GfL" firstAttribute="trailing" secondItem="FXx-cS-ToB" secondAttribute="trailing" constant="20" id="XgW-aq-e4u"/>
                             <constraint firstItem="7ob-Io-nED" firstAttribute="top" secondItem="2XB-KX-9mJ" secondAttribute="bottom" constant="8" id="Xwl-cG-mbT"/>
                             <constraint firstItem="tjQ-tu-EmE" firstAttribute="leading" secondItem="gxF-0X-s6I" secondAttribute="trailing" constant="20" id="ZSt-9y-NIc"/>
                             <constraint firstItem="gxF-0X-s6I" firstAttribute="top" secondItem="x05-U7-1MY" secondAttribute="bottom" constant="20" id="cHG-SG-lM4"/>
@@ -494,8 +518,10 @@
                             <constraint firstItem="hhx-IM-Gub" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="tri-BC-zGw"/>
                             <constraint firstItem="dng-fl-GfL" firstAttribute="trailing" secondItem="tjQ-tu-EmE" secondAttribute="trailing" constant="20" id="vFL-SW-i1G"/>
                             <constraint firstItem="9hM-cF-b2q" firstAttribute="top" secondItem="1Hr-Ve-gSV" secondAttribute="bottom" constant="8" id="vcC-Ya-xRa"/>
+                            <constraint firstItem="1VU-ed-VF2" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="vh7-Px-4dx"/>
                             <constraint firstItem="1Hr-Ve-gSV" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="vli-Et-V8s"/>
                             <constraint firstItem="ZqM-uU-qSD" firstAttribute="leading" secondItem="dng-fl-GfL" secondAttribute="leading" constant="20" id="ww2-DJ-ZXK"/>
+                            <constraint firstItem="FXx-cS-ToB" firstAttribute="top" secondItem="fjO-bV-qbT" secondAttribute="bottom" constant="8" id="yJ7-iB-Mlw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dng-fl-GfL"/>
                     </view>
