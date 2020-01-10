@@ -29,6 +29,7 @@
 		0F4DEDA923C8A66E00F683C9 /* Non.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDA823C8A66E00F683C9 /* Non.mp3 */; };
 		0F4DEDAB23C8A7FE00F683C9 /* HowAreYou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAA23C8A7FE00F683C9 /* HowAreYou.mp3 */; };
 		0F4DEDAD23C8A98600F683C9 /* Pardon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */; };
+		0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */; };
 		0F57B39723C798640094B3AC /* Bonj.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F57B39623C798630094B3AC /* Bonj.mp3 */; };
 		0F57B39923C7BC2B0094B3AC /* BudgetSightseeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */; };
 		0F881E9C23C3EA7F009D0FC6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F881E9B23C3EA7F009D0FC6 /* AppError.swift */; };
@@ -78,6 +79,7 @@
 		0F4DEDA823C8A66E00F683C9 /* Non.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Non.mp3; sourceTree = "<group>"; };
 		0F4DEDAA23C8A7FE00F683C9 /* HowAreYou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HowAreYou.mp3; sourceTree = "<group>"; };
 		0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pardon.mp3; sourceTree = "<group>"; };
+		0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Goodbye.mp3; sourceTree = "<group>"; };
 		0F57B39623C798630094B3AC /* Bonj.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bonj.mp3; sourceTree = "<group>"; };
 		0F57B39823C7BC2B0094B3AC /* BudgetSightseeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSightseeing.swift; sourceTree = "<group>"; };
 		0F881E9B23C3EA7F009D0FC6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		0F28EC7823C12C1D007B9A25 /* Quebec3 */ = {
 			isa = PBXGroup;
 			children = (
+				0F4DEDAE23C8AC6C00F683C9 /* Goodbye.mp3 */,
 				0F4DEDAC23C8A98600F683C9 /* Pardon.mp3 */,
 				0F4DEDAA23C8A7FE00F683C9 /* HowAreYou.mp3 */,
 				0F4DEDA823C8A66E00F683C9 /* Non.mp3 */,
@@ -266,6 +269,7 @@
 				0F4DEDAB23C8A7FE00F683C9 /* HowAreYou.mp3 in Resources */,
 				0F4DEDA923C8A66E00F683C9 /* Non.mp3 in Resources */,
 				0F4DEDA523C8A30900F683C9 /* Bonjour.mp3 in Resources */,
+				0F4DEDAF23C8AC6C00F683C9 /* Goodbye.mp3 in Resources */,
 				0F28EC8623C12C20007B9A25 /* LaunchScreen.storyboard in Resources */,
 				0F4DEDA723C8A53000F683C9 /* Oui.mp3 in Resources */,
 				0F28EC8323C12C20007B9A25 /* Assets.xcassets in Resources */,

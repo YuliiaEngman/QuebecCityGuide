@@ -170,6 +170,26 @@ class DictionaryViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    @IBAction func goodbyeActionButton(_ sender: UIButton) {
+        
+        guard let url = Bundle.main.url(forResource: "Goodbye", withExtension: "mp3") else {
+                print("can't find resource")
+                return
+        }
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+                try AVAudioSession.sharedInstance().setActive(true)
+
+                objPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.m4a.rawValue)
+
+                guard let aPlayer = objPlayer else { return }
+                aPlayer.play()
+
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        
+    }
     
     
     
