@@ -16,13 +16,29 @@ class FirstViewController: UIViewController, AVAudioPlayerDelegate {
     
     var objPlayer: AVAudioPlayer?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         snowDribbbleBalls()
         objPlayer?.delegate = self
         playAudioFile()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        objPlayer?.stop()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        objPlayer?.stop()
+    }
+    
+
+//    - (void)viewWillDisappear:(BOOL)animated
+//    {
+//        [super viewWillDisappear:animated];
+//        [audioPlayer stop]; // Or pause
+//    }
     
     func snowDribbbleBalls() {
         let emitter = Emitter.get(with: UIImage(named: "snow-particle.png")!)
@@ -31,7 +47,6 @@ class FirstViewController: UIViewController, AVAudioPlayerDelegate {
         emitter.emitterSize = CGSize(width: view.frame.width, height: 2)
         view.layer.addSublayer(emitter)
     }
-
     
     func playAudioFile() {
             guard let url = Bundle.main.url(forResource: "HappyNYCropped", withExtension: "mp3") else {
@@ -46,11 +61,41 @@ class FirstViewController: UIViewController, AVAudioPlayerDelegate {
     
                 guard let aPlayer = objPlayer else { return }
                 aPlayer.play()
+                
+                if (aPlayer.rate != 0) {
+                    print("playing")
+                } else {
+                    print("not playing")
+                }
     
             } catch let error {
                 print(error.localizedDescription)
             }
         }
-
 }
+
+//func playAudioFile(with url: URL?) {
+//    guard let url = url else {
+//        print("can't find resource")
+//        return
+//}
+//    do {
+//        try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+//        try AVAudioSession.sharedInstance().setActive(true)
+//
+//        objPlayer = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+//
+//        guard let aPlayer = objPlayer else { return }
+//        aPlayer.play()
+//
+//        if (aPlayer.rate != 0) {
+//            print("playing")
+//        } else {
+//            print("not playing")
+//        }
+//
+//    } catch let error {
+//        print("player error: \(error.localizedDescription)")
+//    }
+//}
 
