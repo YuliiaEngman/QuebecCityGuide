@@ -2,18 +2,9 @@
 
 ## Description:
 
-This application has its target to promote affordable travelling. It has different sections of sights, based on the traveller's budget (free, budget, and luxury) to give the opportunity to everyone to explore Quebec City without being depended from money. Other sections include city's creperies (where you can get breakfast, lunch and dinner) and basic French Dictionary with audio pronunciation. 
+This application has its target to promote affordable travelling. It has different sections of sights, based on the traveller's budget (free, budget, and luxury) to give the opportunity to everyone to explore Quebec City without being dependent on money. Other sections include city's creperies (where you can get breakfast, lunch and dinner) and basic French Dictionary with audio pronunciation. 
 
-Enjoy Travelling!
-
-//## Code snippet of the most challenging part of the project:
-
-```swift
-func challengingFunc() {
-// code hetre
-let name = "John Appleseed"
-}
-```
+Enjoy traveling!
 
 ## Screenshot of the app:
 
